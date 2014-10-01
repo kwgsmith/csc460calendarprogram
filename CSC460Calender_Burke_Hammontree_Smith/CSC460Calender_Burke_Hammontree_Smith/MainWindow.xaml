@@ -1,7 +1,7 @@
 ﻿<Window x:Name="Calender" x:Class="CSC460Calender_Burke_Hammontree_Smith.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="433.881" Width="1213.657">
+        Title="MainWindow" Height="425.081" Width="1075.257">
     <Grid x:Name="CalenderMain">
         <Calendar HorizontalAlignment="Left" Margin="230,115,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
             <Calendar.RenderTransform>
