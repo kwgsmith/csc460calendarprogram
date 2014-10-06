@@ -3,6 +3,7 @@
 // Steven Burke
 
 using System;
+using Xceed.Wpf.Toolkit;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -43,7 +44,9 @@ namespace CSC460Calender_Burke_Hammontree_Smith
 
         private void btnNewEvent_Click(object sender, RoutedEventArgs e)
         {
-            
+            NewEventWindow addEvent = new NewEventWindow();
+
+            addEvent.Show();
         }
   
     }
