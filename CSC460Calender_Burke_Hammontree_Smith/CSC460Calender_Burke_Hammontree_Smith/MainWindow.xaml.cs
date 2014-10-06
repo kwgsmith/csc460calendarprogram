@@ -24,5 +24,37 @@ namespace CSC460Calender_Burke_Hammontree_Smith
         {
             InitializeComponent();
         }
+
+        private void Calender_Initialized(object sender, EventArgs e)
+        {
+            //On calendar initialization set SelectedDate to currentDate
+            calMain.SelectedDate = DateTime.Today;
+        }
+        private void calMain_SelectedDatesChanged(object sender, SelectionChangedEventArgs e)
+        {
+            DateTime curDate = (DateTime)calMain.SelectedDate;
+            curDate.ToShortDateString();
+            lblDateHolder.Content = curDate;
+        }
+
+        private void btnNewEvent_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+  
+    }
+
+    public class Event
+    {
+        String name;
+        DateTime date;
+        String details;
+
+        public Event()
+        {
+            name = " ";
+            date = DateTime.Now;
+            details = " ";
+        }
     }
 }
