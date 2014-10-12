@@ -12,6 +12,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Data.SqlClient;
 
 namespace CSC460Calender_Burke_Hammontree_Smith
 {
@@ -23,6 +24,18 @@ namespace CSC460Calender_Burke_Hammontree_Smith
         public NewEventWindow()
         {
             InitializeComponent();
+        }
+
+        private void btnCancel_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+        }
+
+        private void btnSave_Click(object sender, RoutedEventArgs e)
+        {
+            SqlConnection db = new SqlConnection("Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Kenneth\Documents\VisualStudio2013Projects\csc460calendarprogram\csc460calendarprogram\CSC460Calender_Burke_Hammontree_Smith\CSC460Calender_Burke_Hammontree_Smith\bin\Debug\CalendarDB.mdf;Integrated Security=True;Connect Timeout=30;Context Connection=False");
+
+            
         }
 
     }

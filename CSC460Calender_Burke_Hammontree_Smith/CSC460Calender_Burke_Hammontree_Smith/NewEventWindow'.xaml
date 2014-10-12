@@ -5,13 +5,20 @@
         Title="Add Event" Height="577.332" Width="602.239">
     <Grid>
         <Grid HorizontalAlignment="Left" Height="530" Margin="10,0,0,0" VerticalAlignment="Top" Width="576">
-            <Label Content="Title" HorizontalAlignment="Left" Margin="57,31,0,0" VerticalAlignment="Top" Height="35" Width="87" FontSize="18"/>
-            <TextBox x:Name="TitleTextBox" HorizontalAlignment="Left" Height="35" Margin="144,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-            <Label Content="Date" HorizontalAlignment="Left" Margin="57,87,0,0" VerticalAlignment="Top" FontSize="18"/>
-            <Label Content="Time" HorizontalAlignment="Left" Margin="57,147,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.532,2.446" FontSize="18"/>
-            <DatePicker x:Name="dtpDatePicker" HorizontalAlignment="Left" Margin="144,94,0,0" VerticalAlignment="Top" Width="120"/>
-            <xctk:TimePicker x:Name="dtpTimePicker" HorizontalAlignment="Left" Margin="144,161,0,0" VerticalAlignment="Top" Width="120"/>
-            <Label x:Name="lblDetails" Content="Details" HorizontalAlignment="Left" Margin="57,209,0,0" VerticalAlignment="Top" FontSize="18" RenderTransformOrigin="0.472,-0.292"/>
+            <Label Content="Title" HorizontalAlignment="Left" Margin="54,31,0,0" VerticalAlignment="Top" Height="35" Width="90" FontSize="18"/>
+            <TextBox x:Name="tboxTitle" HorizontalAlignment="Left" Height="35" Margin="169,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <Label Content="Start Date" HorizontalAlignment="Left" Margin="54,77,0,0" VerticalAlignment="Top" FontSize="18" Width="90"/>
+            <Label Content="Start Time" HorizontalAlignment="Left" Margin="54,116,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.532,2.446" FontSize="18" Width="90"/>
+            <DatePicker x:Name="dtpStartDatePicker" HorizontalAlignment="Left" Margin="169,87,0,0" VerticalAlignment="Top" Width="120"/>
+            <xctk:TimePicker x:Name="dtpStartTimePicker" HorizontalAlignment="Left" Margin="169,130,0,0" VerticalAlignment="Top" Width="120"/>
+            <Label x:Name="lblDetails" Content="Details" HorizontalAlignment="Left" Margin="54,247,0,0" VerticalAlignment="Top" FontSize="18" RenderTransformOrigin="0.472,-0.292" Width="90"/>
+            <Label Content="End Date" HorizontalAlignment="Left" Margin="57,155,0,0" VerticalAlignment="Top" FontSize="18" Width="90"/>
+            <Label Content="End Time" HorizontalAlignment="Left" Margin="60,194,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.532,2.446" FontSize="18"/>
+            <DatePicker x:Name="dtpEndDatePicker" HorizontalAlignment="Left" Margin="169,165,0,0" VerticalAlignment="Top" Width="120"/>
+            <xctk:TimePicker x:Name="dtpEndTimePicker" HorizontalAlignment="Left" Margin="169,208,0,0" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="tboxDetails" HorizontalAlignment="Left" Height="130" Margin="57,302,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="455" FontSize="16"/>
+            <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Left" Margin="60,468,0,0" VerticalAlignment="Top" Width="87" Click="btnSave_Click"/>
+            <Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" Margin="189,468,0,0" VerticalAlignment="Top" Width="74" RenderTransformOrigin="-0.027,-0.55" Click="btnCancel_Click"/>
         </Grid>
 
     </Grid>
