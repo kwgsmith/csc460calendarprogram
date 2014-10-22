@@ -33,8 +33,30 @@ namespace CSC460Calender_Burke_Hammontree_Smith
 
         private void btnSave_Click(object sender, RoutedEventArgs e)
         {
-            SqlConnection db = new SqlConnection("Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Kenneth\Documents\VisualStudio2013Projects\csc460calendarprogram\csc460calendarprogram\CSC460Calender_Burke_Hammontree_Smith\CSC460Calender_Burke_Hammontree_Smith\bin\Debug\CalendarDB.mdf;Integrated Security=True;Connect Timeout=30;Context Connection=False");
+            try
+            {
+                String conString = Properties.Settings.Default.CalendarDBConnectionString;
+                Console.Out.Write(conString);
 
+                SqlCommand cmd = new SqlCommand("CREATE  TABLE IF NOT EXISTS [dbo].[EventTest](" +
+                        "[Id] INT NOT NULL PRIMARY KEY IDENTITY," +
+                        "[EventName] VARCHAR(50) NOT NULL,"  +
+                        "[StartDate] DATE NOT NULL," + 
+                        "[EndDate] DATE NOT NULL," +
+                        "[StartTime] DATETIME NOT NULL," +
+                        "[EndTime] DATETIME NOT NULL," +
+                        "[Details] VARCHAR(MAX) NULL);", new SqlConnection(conString));
+
+                SqlCommand insert = new SqlCommand("INSERT INTO Event (EventName, StartDate, EndDate, StartTime, EndTime, Details)" +
+                                                   "VALUES (" + tboxTitle.Text + ", " + dtpStartDatePicker.SelectedDate + ", " + dtpEndDatePicker.SelectedDate + ", "
+                                                   + dtpStartTimePicker.Value + ", " + dtpEndTimePicker.Value + ", " + tboxDetails.Text + ");");
+                cmd.Connection.Open();
+                cmd.ExecuteNonQuery();
+                cmd.Connection.Close();
+                    
+            }
+            catch(SqlException ex)
+            { Console.Out.Write(ex.Message); }
             
         }
 

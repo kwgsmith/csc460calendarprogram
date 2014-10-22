@@ -12,8 +12,8 @@
             <DatePicker x:Name="dtpStartDatePicker" HorizontalAlignment="Left" Margin="169,87,0,0" VerticalAlignment="Top" Width="120"/>
             <xctk:TimePicker x:Name="dtpStartTimePicker" HorizontalAlignment="Left" Margin="169,130,0,0" VerticalAlignment="Top" Width="120"/>
             <Label x:Name="lblDetails" Content="Details" HorizontalAlignment="Left" Margin="54,247,0,0" VerticalAlignment="Top" FontSize="18" RenderTransformOrigin="0.472,-0.292" Width="90"/>
-            <Label Content="End Date" HorizontalAlignment="Left" Margin="57,155,0,0" VerticalAlignment="Top" FontSize="18" Width="90"/>
-            <Label Content="End Time" HorizontalAlignment="Left" Margin="60,194,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.532,2.446" FontSize="18"/>
+            <Label Content="End Date" HorizontalAlignment="Left" Margin="54,155,0,0" VerticalAlignment="Top" FontSize="18" Width="90"/>
+            <Label Content="End Time" HorizontalAlignment="Left" Margin="54,194,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.532,2.446" FontSize="18"/>
             <DatePicker x:Name="dtpEndDatePicker" HorizontalAlignment="Left" Margin="169,165,0,0" VerticalAlignment="Top" Width="120"/>
             <xctk:TimePicker x:Name="dtpEndTimePicker" HorizontalAlignment="Left" Margin="169,208,0,0" VerticalAlignment="Top" Width="120"/>
             <TextBox x:Name="tboxDetails" HorizontalAlignment="Left" Height="130" Margin="57,302,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="455" FontSize="16"/>

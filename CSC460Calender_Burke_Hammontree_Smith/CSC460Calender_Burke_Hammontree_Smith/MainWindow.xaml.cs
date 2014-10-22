@@ -62,6 +62,10 @@ namespace CSC460Calender_Burke_Hammontree_Smith
             name = " ";
             date = DateTime.Now;
             details = " ";
+
+            //SqlCommand query = new SqlCommand("SELECT E.EventName" +
+               //                                   "FROM Event E" +
+                  //                                "WHERE ");
         }
     }
 }
